@@ -1,0 +1,10 @@
+create database ca;
+create table users(user varchar(220), pass varchar(220), PRIMARY KEY(user));
+create table movies(id int, name varchar(220), no_rate int, avg_rate int, primary key(id));
+alter table movies modify column avg_rate decimal(3, 2);
+insert into movies values(6, 'saw 3', 0, 0);
+insert into movies values(5, 'saw 2', 0, 0);
+insert into movies values(4, 'saw', 0, 0);
+insert into movies values(3, 'the house next door', 0, 0);
+insert into movies values(2, 'bad taste', 0, 0);
+insert into movies values(1, 'brain dead', 0, 0);
